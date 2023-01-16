@@ -41,7 +41,10 @@ DJANGO_APPS = [
 
 THIRDPARTY_LIBRARIES = []
 
-PROJECT_APPS = ["users.apps.UsersConfig"]
+PROJECT_APPS = [
+    "users.apps.UsersConfig",
+    "products.apps.ProductsConfig",
+]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRDPARTY_LIBRARIES
 
