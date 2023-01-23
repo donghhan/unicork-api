@@ -18,7 +18,7 @@ class UserAdmin(admin.ModelAdmin):
     @admin.display(description="เข้าสู่ระบบครั้งล่าสุด")
     def last_login_time_in_buddhism(self, obj):
         if obj.last_login:
-            return f"{obj.last_login.year + 544} / {obj.last_login.month} / {obj.last_login.day} {obj.last_login.hour}:{obj.last_login.minute}"
+            return f"{obj.last_login.day} / {obj.last_login.month} / {obj.last_login.year + 544} {obj.last_login.hour}:{obj.last_login.minute}"
         else:
             return "ไม่ทราบ"
 

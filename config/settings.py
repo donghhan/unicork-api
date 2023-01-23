@@ -39,7 +39,9 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRDPARTY_LIBRARIES = []
+THIRDPARTY_LIBRARIES = [
+    "rest_framework",
+]
 
 PROJECT_APPS = [
     "users.apps.UsersConfig",
@@ -59,6 +61,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "config.urls"
+
+# Django Rest Framework
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
+    ]
+}
+
 
 TEMPLATES = [
     {

@@ -33,6 +33,7 @@ class Product(models.Model):
     weight = models.PositiveSmallIntegerField(
         verbose_name="น้ำหนัก", validators=[MinValueValidator(1)]
     )
+    stock = models.PositiveSmallIntegerField(verbose_name="")
 
     def __str__(self):
         return self.name

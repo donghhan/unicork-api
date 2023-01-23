@@ -9,6 +9,7 @@ packages = [{include = "unicork_api"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^4.1.5"
+djangorestframework = "^3.14.0"
 
 
 [build-system]
