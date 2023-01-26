@@ -65,7 +65,7 @@ ROOT_URLCONF = "config.urls"
 # Django Rest Framework
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
+        "rest_framework.permissions.IsAuthenticated",
     ]
 }
 
